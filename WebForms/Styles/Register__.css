@@ -1,0 +1,332 @@
+@import "./variables.css";
+
+@font-face {
+    font-family: "RobotoSlab-Regular";
+    src: url("../assets/fonts/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Stanley";
+    src: url("../assets/fonts/Stanley.otf");
+}
+
+@font-face {
+    font-family: "Candara";
+    src: url("../assets/fonts/candara.ttf");
+}
+
+@font-face {
+    font-family: "Candara-Bold";
+    src: url("../assets/fonts/ofont.ru_Candara.ttf");
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main__description {
+    font-family: RobotoSlab-Regular;
+    color: var(--primary-text-color);
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+
+.background {
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.form-description {
+    display: flex;
+    font-family: Candara;
+    font-size: 2rem;
+    width: 20%;
+    justify-content: space-between;
+    padding: 60px 0 0 0;
+    color: #000000;
+    font-weight: 600;
+}
+
+.sign-description {
+    color: rgba(97, 97, 97, 1);
+    text-decoration: none;
+}
+
+select {
+    font-size: 1.1rem;
+    margin-left: 20px;
+    color: #333;
+    padding: 8px;
+    border: none;
+    border: 2px solid black;
+    background-color: #f2f2f2;
+}
+
+.label-user_type {
+    font-size: 1.1rem;
+}
+
+select option {
+    font-size: 1.1rem;
+}
+
+.form {
+    display: inherit;
+    flex-direction: column;
+}
+
+.input {
+    width: 430px;
+    font-family: Candara;
+    font-size: 1.1rem;
+    color: var(--input-text-color);
+    padding: 11px 0 9px 16px;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.select {
+    display: flex;
+    align-items: baseline;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.user-type-container {
+    display: flex;
+    align-items: baseline;
+    margin-left: 10px;
+}
+
+#secret_key_container {
+    margin-left: 10px;
+}
+
+
+
+.button {
+    border: 2px solid black;
+    padding: 14px 0 12px;
+    width: 205px;
+    display: flex;
+    justify-content: center;
+}
+
+.button__text {
+    font-family: Candara;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+
+.button__link {
+    text-decoration: none;
+}
+
+.input-icon {
+    background-image: url(../assets/icons/eye.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 95%;
+    padding-right: 30px;
+}
+
+    .input-icon.show-password {
+        background-image: url(../assets/icons/eye-open-svgrepo-com.svg);
+    }
+
+.button__text {
+    padding-left: 10px;
+}
+
+.check-info {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: baseline;
+    margin-top: 15px;
+}
+
+.checkbox-description {
+    font-family: RobotoSlab-Regular;
+    font-size: 1rem;
+    padding-left: 12px;
+}
+
+.button__authorization {
+    width: 430px;
+    background-color: black;
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+span {
+    color: white;
+    font-family: Candara;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3.75rem 0 11.25rem;
+    /* text-align: center; */
+    /* width: 434px; */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 434px; */
+}
+
+.form-wrapper__sign-in {
+    margin-bottom: 40px;
+}
+
+.form-button {
+    display: inline-block;
+    border: none;
+    font-family: 'Candara';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* Black */
+    color: #030303;
+    /* opacity: 0.5; */
+    /* background: white; */
+}
+
+.form-button-second {
+    color: #616161;
+    margin-left: 1.87rem;
+}
+
+
+
+.form-wrapper__input {
+    margin-top: 1rem;
+}
+
+.form-input {
+    width: 434px;
+    height: 50px;
+    padding: 11px 98px 9px 16px;
+    font-family: 'Candara';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* display: flex;
+    align-items: center; */
+    color: #808080;
+    background: #FFFFFF;
+    border: 1px solid #030303;
+}
+
+.form-wrapper__password,
+.form-wrapper__forgot-password {
+    margin-top: 1.25rem;
+}
+
+.form-password {
+    background: url("../image/icons/eye.svg") no-repeat 98% 50%;
+}
+
+.form-text {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #030303;
+}
+
+.forgot-passvord {
+    text-decoration-line: underline;
+}
+
+.form-wrapper__checkbox {
+    margin-top: 2.5rem;
+}
+
+.input__checkbox {
+    margin-right: 0.92rem;
+}
+
+.form-wrapper__button {
+    margin-top: 1.875rem;
+}
+
+.form__button {
+    width: 434px;
+    height: 50px;
+    font-family: 'Candara';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.form-text__condition {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    /* Gray text */
+    color: #333333;
+    margin-top: 1.25rem;
+}
+
+.form-link-text {
+    color: #333333;
+    text-decoration: underline;
+}
+
+
+button#RegisterButton {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,292 @@
+﻿/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./variables.css";
+
+
+@font-face {
+    font-family: 'Stanley';
+    src: url(../fonts/stanley-moon1.otf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../public/fonts/Inter/static/Inter-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../public/fonts/Roboto/Roboto-Light.ttf");
+}
+/* Header styles */
+header {
+    /* background-color: #444444;*/
+    color: black;
+    padding: 20px;
+}
+
+.header-container {
+    font-family: Candara;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+  color: black; /* задаємо колір тексту посилання */
+  text-decoration: none; /* вимикаємо стандартний декор посилання */
+  display: inline-block; /* робимо посилання блочним елементом, щоб можна було задати ширину та висоту */
+  padding: 10px; /* задаємо відступи для тексту */
+  position: relative; /* задаємо позиціонування для позаду посилання */
+}
+
+    a:hover {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1f6c7d, 0 0 25px #1f6c7d, 0 0 25px #1f6c7d, 0 0 35px #1f6c7d, 0 0 5px #1f6c7d;
+         
+    }
+
+
+
+.logout-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Add some space between #profile and the "Log out" container */
+}
+
+    .logout-container img {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px; /* Add some space between the image and the text */
+    }
+
+nav {
+    margin-left: auto; /* Push the navigation menu to the right */
+}
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+            nav ul li:last-child {
+                margin-right: 0;
+            }
+
+            nav ul li a {
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                nav ul li a.active {
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+
+/* Profile styles */
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    /*background-color: #131212;*/
+    color: black;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+    .profile-container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.field {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+    .field label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .field input[type="file"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .field input[type="text"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        /*border: 1px solid #ccc;*/
+        border-radius: 4px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .field input[type="file"]::-webkit-file-upload-button {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .field input[type="file"]::before {
+        content: 'Choose File';
+        display: inline-block;
+        background-color: #2C3E50;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .field input[type="file"]:hover::before {
+        background-color: #fff;
+    }
+
+    .field input[type="file"]:active::before {
+        background-color: #1B2631;
+    }
+
+    .field input[type="file"]::-webkit-file-upload-button {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .field input[type="file"]::before {
+        content: 'Choose File';
+        display: inline-block;
+        background-color: black;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .field input[type="file"]:hover::before {
+        background-color: #1f6c7d;
+    }
+
+    .field input[type="file"]:active::before {
+        background-color: #1B2631;
+    }
+
+
+///
+
+.field input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.field input[type="submit"] {
+    display: block;
+    border-width: 0;
+    width: 19%;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: black;
+    cursor: pointer;
+}
+
+    .field input[type="submit"]:hover {
+        background-color: #1f6c7d;
+    }
+
+#special_bottom {
+    width: auto;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border-width: 0;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: black;
+    cursor: pointer;
+}
+
+    #special_bottom:hover {
+        background-color: #1f6c7d;
+    }
+
+#Crowdfunding {
+    width: auto;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border-width: 0;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: black;
+    cursor: pointer;
+}
+
+    #Crowdfunding:hover {
+        background-color: #1f6c7d;
+    }
+
+.Label_text {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+#preview {
+    width: 50%;
+    height: 70%;
+    display: none;
+}
+
+#AddProject {
+    width: auto;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border-width: 0;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: black;
+    cursor: pointer;
+}
+
+    #AddProject:hover {
+        background-color: #1f6c7d;
+    }
+
+
+
+

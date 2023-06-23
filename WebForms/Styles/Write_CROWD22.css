@@ -1,0 +1,241 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header styles */
+header {
+    /* background-color: #444444;*/
+    color: black;
+    padding: 10px;
+}
+
+.header-container {
+    font-family: Candara;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: black; /* задаємо колір тексту посилання */
+    text-decoration: none; /* вимикаємо стандартний декор посилання */
+    display: inline-block; /* робимо посилання блочним елементом, щоб можна було задати ширину та висоту */
+    padding: 10px; /* задаємо відступи для тексту */
+    position: relative; /* задаємо позиціонування для позаду посилання */
+}
+
+    a:hover {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1f6c7d, 0 0 25px #1f6c7d, 0 0 25px #1f6c7d, 0 0 35px #1f6c7d, 0 0 5px #1f6c7d;
+    }
+
+
+
+.logout-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Add some space between #profile and the "Log out" container */
+}
+
+    .logout-container img {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px; /* Add some space between the image and the text */
+    }
+
+nav {
+    margin-left: auto; /* Push the navigation menu to the right */
+}
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+            nav ul li:last-child {
+                margin-right: 0;
+            }
+
+            nav ul li a {
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                nav ul li a.active {
+                    font-weight: bold;
+             
+                }
+
+
+.body_div {
+    margin: 20px;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+/* Header styles */
+h1 {
+    font-size: 24px;
+    text-align: center;
+   
+}
+.crowdfunding_foto {
+    width: 50%;
+    height: 30%;
+
+}
+.container_foto {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CROWDFAUND_h1{
+    padding-top:15px;
+}
+hr {
+   
+    margin-top: 20px;
+    border-width: 0 0 5px 0;
+}
+
+/* Form styles */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size:20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.up_text {
+    font-weight: bold;
+}
+
+#preview {
+    width: 80%;
+    height: 100%;
+    display: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #4EA5B8;
+    box-shadow: 0 0 10px rgba(31, 108, 125, 0.5);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 20px;
+  margin-top: 5px;
+    width: 100%;
+    resize: vertical;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #4EA5B8;
+    box-shadow: 0 0 10px rgba(31, 108, 125, 0.5);
+}
+
+
+/*input[type="file"] {
+    margin-top: 10px;
+    background-color: #1f6c7d;
+}
+*/
+
+.field input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+    .field input[type="file"]::-webkit-file-upload-button {
+        visibility: hidden;
+        width: 0;    
+        /*перекриває негарну кнопку*/
+    }
+
+    .field input[type="file"]::before {
+        content: 'Choose File';
+        display: inline-block;
+        background-color: #2C3E50;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .field input[type="file"]:hover::before {
+        background-color: #fff;
+    }
+
+    .field input[type="file"]:active::before {
+        background-color: #1B2631;
+    }
+/*
+
+    .field input[type="file"]::before {
+        content: 'Choose File';
+        display: inline-block;
+        background-color: black;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }*/
+
+    .field input[type="file"]:hover::before {
+        background-color: #1f6c7d;
+    }
+
+.button-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+    .button-container .btn {
+        width: auto;
+        padding: 10px;
+        font-size: 16px;
+        border-width: 0;
+        border-radius: 4px;
+        color: white;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+        .button-container .btn:hover {
+            background-color: #1f6c7d;
+        }
+
+#errorLabel {
+    color: red;
+}
+
+#preview {
+    padding-top: 10px;
+    padding-bottom:10px;
+}
